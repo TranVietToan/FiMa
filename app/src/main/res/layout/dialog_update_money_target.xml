@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin tài chính"
+        android:textColor="@color/primary_text"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="14dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/edt_cash_Target"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập số tiền mặt..."
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/lato_bold"
+        android:textColorHint="@color/secondary_text"
+        android:textColor="@color/primary_text"
+        android:background="@drawable/neumorphism_edit_text"/>
+    <EditText
+        android:id="@+id/edt_money_in_card_Target"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập số tiền trong tài khoản..."
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/lato_bold"
+        android:textColorHint="@color/secondary_text"
+        android:textColor="@color/primary_text"
+        android:background="@drawable/neumorphism_edit_text"/>
+    <Button
+        android:id="@+id/btn_confirm_money_Target"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Xác nhận thông tin"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/lato_bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/neumorphism_button_confirm"/>
+</LinearLayout>

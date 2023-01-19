@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Homie có chắc muốn xóa khum?\n"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <Button
+            android:id="@+id/btn_caner_remove"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Hừm..Thôi!"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_bold"
+            android:background="@drawable/neumorphism_button"/>
+        <Button
+            android:id="@+id/btn_confirm_remove"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Oke..Bro!"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/lato_bold"
+            android:textAllCaps="false"
+            android:background="@drawable/neumorphism_button"/>
+    </RelativeLayout>
+</LinearLayout>

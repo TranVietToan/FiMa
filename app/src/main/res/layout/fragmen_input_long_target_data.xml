@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <CalendarView
+        android:id="@+id/calendar_view_InputLongTarget"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="@drawable/neumorphism_button"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Thông tin kế hoạch "
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:textSize="16dp"
+        android:fontFamily="@font/lato_bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <EditText
+                android:id="@+id/edt_title_data_InputLongTarget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Nhập tiêu đề..."
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColorHint="@color/secondary_text"
+                android:textColor="@color/primary_text"
+                android:background="@drawable/neumorphism_edit_text"/>
+            <EditText
+                android:id="@+id/edt_content_data_InputLongTarget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:hint="Nhập số tiền..."
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColorHint="@color/secondary_text"
+                android:textColor="@color/primary_text"
+                android:background="@drawable/neumorphism_edit_text"/>
+            <EditText
+                android:id="@+id/edt_time_end_InputLongTarget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:hint="Nhập ghi chú..."
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColorHint="@color/secondary_text"
+                android:textColor="@color/primary_text"
+                android:background="@drawable/neumorphism_edit_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_confirm_data_InputLongTarget"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/neumorphism_button_confirm"
+        android:text="Xác nhận thông tin"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_bold"
+        android:layout_alignParentEnd="true" />
+
+</LinearLayout>

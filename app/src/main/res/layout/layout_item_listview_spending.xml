@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/neumorphism_button"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_spending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/lato_bold"/>
+        <TextView
+            android:id="@+id/content_spending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/item"
+            android:fontFamily="@font/lato_bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+        <ImageView
+            android:id="@+id/topic_spending"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_graduation_cap_mini"/>
+        <TextView
+            android:id="@+id/time_spending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="22/12/2022"
+            android:textSize="14dp"
+            android:layout_toRightOf="@id/topic_spending"
+            android:textColor="@color/secondary_text"
+            android:fontFamily="@font/lato_bold"/>
+
+        <TextView
+            android:id="@+id/type_spending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/lato_bold"
+            android:text="Chuyển khoản"
+            android:layout_centerVertical="true"
+            android:textColor="@color/secondary_text"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</LinearLayout>
